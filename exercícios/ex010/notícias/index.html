@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="GuiLima.ico.ico" type="image/x-icon">
+    <title>GuiLima</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <hr>
+    <h2>Como funciona um link?</h2>
+    <p>Um link serve para abrirmos uma nova página com o intuito de encontrarmos algo que procuramos através do navegador.</p>
+    <p>A tag que usamos para inserir um link é a tag <mark>A</mark>. </p>
+    <p>Além do uso dessa tag, também usamos alguns atributos para expecificarmos "como" ele seja aberto.</p>
+    <p>Esses atributos são:</p>
+    <ol type="1">
+    <li><mark>TARGET</mark>: Como ele vai abrir, se vai abrir por cima da outra janela, se vai abrir outra janela, etc:</li>
+     <ul type="disc">
+        <li>_blank: abre em uma nova janela em branco;</li>
+        <li>_self: abre na janela atual;</li>
+        <li>_top: desfaz todos os frames e abre no navegador completo;</li>
+        <li>_parent: similar com o anterior em uma referência à janela mãe.</li>
+     </ul>
+            <li><mark>REL</mark>: indicar a natureza do destino:</li>
+        <ul type="disc">
+            <li>next: próxima parte do documento;</li>
+            <li>prev: parte anterior do documento;</li>
+            <li>author: link para o site do autor do artigo;</li>
+            <li>external: link para outro site que não faz paarte do site autal;</li>
+            <li>nofollow: lin pago.</li>
+        </ul>
+    </ol>
+    <p>Por exemplo o link ao lado, você pode acessar meu <a href="https://www.youtube.com/channel/UCy9pD3oAnw1BoohVo7K2x3Q"target="blank" rel="external">canal no youtube</a></p>
+    Você também pode entrar na minha <a href="pagina002.html" target="_self" rel="next">segunda página</a>
+    <p>Acesse também a página de <a href="notícias/pagina003.html">notícias</a></p>
+</body>
+</html>

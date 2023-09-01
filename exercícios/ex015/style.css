@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body{
+    background-color: firebrick;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

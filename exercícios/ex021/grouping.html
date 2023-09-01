@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>GuiLima</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #DCD300;
+        }
+
+        header {
+            background-color: #FFF719;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 5px 3px 5px 1px #0000008a;
+            border-radius: 7px;
+        }
+
+        nav {
+            background-color: #625f03;
+            padding: 3px;
+            box-shadow: 5px 3px 5px 1px #0000008a;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: #9c970c;
+            font-weight: 700;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: #FFF719;
+        }
+
+        main#explicação {
+            background-color: #873ff4;
+            padding: 10px;
+            margin: 10px;
+            border: 10px 10px 10px 10px;
+            border-color: #674C8F;
+            box-shadow: 5px 3px 5px 1px #0000008a;
+
+            text-align: justify;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 16px;
+        }
+
+        main#explicação > h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #1c0d33;
+            font-size: 35px;
+            text-align: center;
+        }
+
+        main {
+            background-color: #FFF719;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 5px 3px 5px 1px #0000008a;
+            border-radius: 7px;
+        }
+
+        footer {
+            background-color: #312f01;
+            text-align: center;
+            color: aliceblue;
+            box-shadow: 5px 3px 5px 1px #0000008a;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    <main id="explicação">
+        <h1>Grouping tags e semantic tags</h1>
+        <h3>A linguagem HTML possui duas tags de agrupamento genéricos:</h3>
+        <li><strong>Div:</strong> blockline-level;</li>
+        <li><strong>Span:</strong> inline-level.</li>
+        <h3>Com o surgimento do HTML5, essas tags se tronaram não-semânticas, pois agora temos tags para dividir partes do documento HTML:</h3>
+        <li><strong>Header:</strong> cria áreas relativas ao cabeçalho;</li>
+        <li><strong>Nav:</strong> define áras que possui os links de navegação pela estrutura de páginas do website. Um <strong>nav</strong> pode estar dentro de um <strong>header</strong>;</li>
+        <li><strong>Main:</strong> agrupador que delimita o conteúdo principal do site;</li>
+        <li><strong>Section:</strong> cria seções para a página. Pode conter o conteúdo diretamente do corpo ou dividir em artigos com conteúdos específicos;</li>
+        <li><strong>Article:</strong> elemento que vai conter um conteúdo que pode ser lido de forma independente e dizem respeito do mesmo assunto. podemos usar esse elemento para delimitar um post de blog ou fórum;</li>
+        <li><strong>Aside:</strong> está posicionado ao lado de um texto ou no meio dele;</li>
+        <li><strong>footer:</strong> possui informações sobre a autoria do conteúdo.</li>
+    </main>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="caixa.html">Conteúdo sobre caixas</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Só sei que nada sei</h2>
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícia sobre algo</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, incidunt recusandae. Hic in ullam facilis non quam! Odit vel laboriosam sequi voluptate earum numquam similique eveniet libero omnis. Nihil, facere!</p>
+                <aside>
+                    <p>Artigo escrito por Guilherme</p>
+                </aside>
+            </article>
+            <article>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Guilherme</p>
+    </footer>
+</body>
+</html>

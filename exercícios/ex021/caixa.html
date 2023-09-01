@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>GuiLima</title>
+</head>
+<style>
+    body {
+        background-image: linear-gradient(to right, #0DFFDA,#009DFF)
+    }
+
+    main {
+        background-color: #005700;
+
+        border: 10px;
+        border-style: solid;
+        border-color: black;
+
+        padding: 10px;
+        width: 600px;
+
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    main > p > a {
+        color: antiquewhite;
+        font-size: xx-large;
+        text-decoration: none;
+        font-weight: border;
+    }
+
+    main:hover > p > a {
+        display: inline-block;
+        color: #06d906;
+        text-align: center;
+    }
+
+    main.block-level {
+        width: 300px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    main.caixa-block-level {
+        width: 400px;
+        display: inline-block;
+        margin-right: 200px;
+    }
+
+    main.inline-level {
+        width: 300px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    main.caixa-inline-level {
+        width: 400px;
+        display: inline-block;
+        margin-left: 200px;
+    }
+
+    main > li {
+        text-align: justify;
+    }
+
+    h1 {
+        text-align: center;
+        color: blanchedalmond;
+        font-family: sans-serif;
+        font-size: xx-large;
+        font-size: 50px;
+    }
+
+    h3 {
+        text-align: center;
+        color: blanchedalmond;
+        font-size: x-large;
+        font-style: italic;
+    }
+
+    p, li {
+        color: blanchedalmond;
+        font-size: 20px;
+        font-weight: 450;
+    }
+
+    h2 {
+        color: blanchedalmond;
+        font-family: sans-serif;
+        font-size: 30px;
+    }
+
+    article#caixa {
+        background-color: #005700;
+        width: 600px;
+        margin: auto;
+        padding: 10px;
+    }
+</style>
+<body>
+    <main>
+        <h1>Modelo de caixas</h1>
+        <h3>São caixas que armazenam informações de cada seletor.</h3>
+        <h2>Principais caixas</h2>
+        <li><strong>Width:</strong> largura;</li>
+        <li><strong>Height:</strong> altura;</li>
+        <li><strong>Box-size:</strong> tamanho da caixa;</li>
+        <li><strong>Border:</strong> borda da caixa;</li>
+        <li><strong>Padding:</strong> preenchimento da caixa;</li>
+        <li><strong>Margin:</strong> margem da caixa;</li>
+        <li><strong>Outline:</strong> contorno.</li>
+    </main>
+    <main>
+            <p><a href="grouping.html">Grouping tags</a></p>
+    </main>
+    <main>
+        <h1>Simplificando</h1>
+        <h3>Dependendo da caixa, ela pode conter mais de 5 dentro dela para fazer uso máximo da configuração.</h3>
+        <h2>Shorthand</h2>
+        <p>As configurações de borda e contorno possuem shorthands para simplificar.</p>
+        <h2>Borda</h2>
+        <li>Border-widht: largura da borda;</li>
+        <li>Border-style: estilo da borda;</li>
+        <li>Border-color: cor da borda.</li>
+        <p>Shorthand: "border: 10px(largura), solid(estilo), red(cor)".</p>
+        <h2>Contorno</h2>
+        <li>Outline-width: largura do contorno;</li>
+        <li>Outline-style: estilo do contorno;</li>
+        <li>Outline-color: cor do contorno.</li>
+        <p>Shorthand: "outline: 30px(largura), solid(estilo), blue(cor)".</p>
+    </main>
+    <main>
+        <h1>Shorthand pt.2</h1>
+        <h3>Espaçamento e margem também têm como ser simplificadas.</h3>
+        <h2>Espaçamento</h2>
+        <li>Padding-top: 10px;</li>
+        <li>Padding-right: 15px;</li>
+        <li>Padding-bottom: 20px;</li>
+        <li>Padding-left: 25px.</li>
+        <p>Shorthand: "padding: 10px(superior), 15px(direita), 20px(inferior), 25px(esquerda)".</p>
+        <h2>Margem</h2>
+        <li>Margin-top: 0px;</li>
+        <li>Margin-right: 10px;</li>
+        <li>Margin-bottom: 20px;</li>
+        <li>Margin-left: 30px.</li>
+        <p>Shorthand: "margin: 0px(superior), 10px(direita), 20px(inferior), 30px(esquerda)".</p>
+        <h2>Margens no automático</h2>
+        <p>Para que o bloco seja centralizado automáticamente, use a declaração "margin: auto".</p>
+    </main>
+    <main class="caixa-block-level">
+        <h1>Caixa do tipo block-level</h1>
+        <h3>Um elemento block-level ocupa a largura total do site, ou seja, ele não consegue dividir espaço.</h3>
+    </main>
+    <main class="caixa-inline-level">
+        <h1>Caixa tipo inline-level</h1>
+        <h3>Não ocupa uma largura inteira do site, a menos que o desenvolvedor a faça ocupar ele todo</h3>
+    </main>
+    <main class="block-level">
+        <h2>Lista de alguns block-levels</h2>
+        <li>div;</li>
+        <li>address;</li>
+        <li>footer;</li>
+        <li>main;</li>
+        <li>section;</li>
+        <li>article;</li>
+        <li>dl;</li>
+        <li>form;</li>
+        <li>nav;</li>
+        <li>table;</li>
+        <li>dt;</li>
+        <li>aside;</li>
+        <li>h1 - h6;</li>
+        <li>noscript;</li>
+        <li>tfoot;</li>
+        <li>blockquote;</li>
+        <li>fieldset;</li>
+        <li>header;</li>
+        <li>ol;</li>
+        <li>ul;</li>
+        <li>li;</li>
+        <li>canvas;</li>
+        <li>figcaption;</li>
+        <li>hr;</li>
+        <li>p;</li>
+        <li>video;</li>
+        <li>dd;</li>
+        <li>figure;</li>
+        <li>pre.</li>
+    </main>
+    <main class="inline-level">
+        <h2>Lista de alguns inline-levels</h2>
+        <li>a;</li>
+        <li>button;</li>
+        <li>img;</li>
+        <li>output;</li>
+        <li>span;</li>
+        <li>abbr;</li>
+        <li>cite;</li>
+        <li>input;</li>
+        <li>q;</li>
+        <li>strong;</li>
+        <li>acronym;</li>
+        <li>code;</li>
+        <li>kbd;</li>
+        <li>samp;</li>
+        <li>sub;</li>
+        <li>b;</li>
+        <li>dfn;</li>
+        <li>label;</li>
+        <li>script;</li>
+        <li>textarea;</li>
+        <li>bdo;</li>
+        <li>em;</li>
+        <li>map;</li>
+        <li>select;</li>
+        <li>tt;</li>
+        <li>br;</li>
+        <li>i;</li>
+        <li>object;</li>
+        <li>small;</li>
+        <li>var.</li>
+    </main>
+</body>
+</html>
