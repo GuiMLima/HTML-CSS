@@ -4,10 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="shortcut icon" href="GuiLima.ico.ico" type="image/x-icon"> 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        header > h1 {
+            padding-top: 30px;
+            font-variant: small-caps;
+        }
+
+        header > h3 {
+            padding-bottom: 30px;
+        }
+
+        main {
+            background-color: red;
+            padding: 30px;
+        }
+
+        div {
+            border: 1px solid black;
+            border-radius: 25px;
+            padding: 5px;
+            height: 150px;
+            width: 150px;
+        }
+
+        div > p {
+            top: 50%;
+            padding-left: 50%;
+            text-align: center;
+        }
+
+        div:hover {
+            background-color: rgb(165, 0, 0);
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Poema</h1>
-    <h3>Segue abaixo quatro poemas destinados para as pessoas mais importantes da sua vida.</h3>
+    <header>
+        <h1>Poema</h1>
+        <h3>Segue abaixo quatro poemas destinados para as pessoas mais importantes da sua vida.</h3>
+    </header>
+    <main>
+        <div>
+            <p><a href="namorada.html" target="_blank">Namorada</a></p>
+        </div>
+        <div>
+            <p><a href="pai.html" target="_blank">Pai</a></p>
+        </div>
+        <div>
+            <p><a href="irmao.html" target="_blank">Irmão-caçula</a></p>
+        </div>
+        <div>
+            <p><a href="mae.html" target="_blank">Mãe</a></p>
+        </div>
+    </main>
 </body>
 </html>
