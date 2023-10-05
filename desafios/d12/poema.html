@@ -11,6 +11,10 @@
             padding: 0px;
         }
 
+        body {
+            background-color: black;
+        }
+
         header {
             background-color: black;
             color: white;
@@ -18,46 +22,98 @@
         }
 
         header > h1 {
+            font-size: 100px;
             padding-top: 30px;
             font-variant: small-caps;
         }
 
         header > h3 {
+            font-size: 25px;
             padding-bottom: 30px;
         }
 
         main {
-            background-color: red;
-            padding: 30px;
+            background-image: linear-gradient(to bottom, black, rgb(28, 28, 28));
         }
 
         div {
+            background-color: rgb(255, 255, 255);
             border: 1px solid black;
-            border-radius: 25px;
-            padding: 5px;
-            height: 150px;
+            border-radius: 5px;
+            padding: 15px;
+            height: 90px;
             width: 150px;
         }
 
         div > p {
-            top: 50%;
-            padding-left: 50%;
-            text-align: center;
+            padding-left: 10%;
+            font-size: 30px;
         }
 
         div:hover {
-            background-color: rgb(165, 0, 0);
+            background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(218, 218, 218));
+            transition-duration: 1s;
+            width: 300px;
+            height: 90px;
         }
 
         a {
-            color: white;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
             text-decoration: none;
             font-weight: bolder;
         }
 
-        a:hover {
+        div > p > a:hover {
             text-decoration: underline;
         }
+
+        aside {
+            padding: 10px;
+        }
+
+        aside > h3 {
+            font-size: 50px;
+            color: white;
+        }
+
+        aside > p {
+            padding-left: 15px;
+            font-size: 30px;
+            color: white;
+            padding-bottom: 5px;
+        }
+
+        aside > p > a {
+            color: white;
+            padding: 3px;
+        }
+
+        aside > p > a:hover {
+            background-color: #16A180;
+            border-radius: 5px;
+            transition-duration: 0.5s;
+        }
+
+        aside > p > a.youtube:hover {
+        background-color: red;
+        color: white;
+    }
+
+    aside > p > a.facebook:hover {
+        background-color: rgb(52, 52, 252);
+        color: white;
+    }
+
+    aside > p > a.instagram:hover {
+        background-image: linear-gradient(to right, purple, #f30085, #d8d800, rgb(255, 200, 0));
+        color: white;
+    }
+
+    aside > p > a.linkedin:hover {
+        background-color: blue;
+        color: white;
+    }
     </style>
 </head>
 <body>
@@ -78,6 +134,22 @@
         <div>
             <p><a href="mae.html" target="_blank">Mãe</a></p>
         </div>
+    <article>
+        <aside>
+            <h3>Compositor</h3>
+            <p><a href="https://chat.openai.com/" target="_blank">ChatGPT</a>
+            </p>
+            <h3>Quer saber mais sobre mim?</h3>
+                <p>Me siga nas minhas redes sociais!</p>
+                <p><a href="https://www.youtube.com/@bolinhadelima6170/videos" class="youtube">YouTube</a></p>
+                <p><a href="https://www.facebook.com/guilherme.marques.37669/" class="facebook">Facebook</a></p>
+                <p><a href="https://www.instagram.com/guimardelima/" class="instagram">Instagram</a></p>
+                <p><a href="https://www.linkedin.com/in/guilherme-marques-de-lima-0b5361219/" class="linkedin">Linkedin</a></p>
+        </aside>
+    </article>
     </main>
+    <footer>
+        <p style="background-color: black; color: white; text-align: center;">Feito por GuiMLima</p>
+    </footer>
 </body>
 </html>
