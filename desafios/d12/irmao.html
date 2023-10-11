@@ -6,6 +6,8 @@
     <title>GuiLima</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
         * {
             margin: 0px;
             padding: 0px;
@@ -14,6 +16,7 @@
         html, body {
             min-height: 100vh;
             background-color: darkgray;
+            font-family: 'Young Serif', serif;
         }
 
         header {
@@ -33,7 +36,7 @@
             padding-bottom: 10vh;
             line-height: 2em;
             padding-left: 30px;
-            font-size: 3.5vw;
+            font-size: 3vw;
         }
 
         section.normal {
@@ -44,12 +47,22 @@
         section.imagem {
             background-color: rgb(96, 96, 96);
             color: white;
+            box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.444);
+            background-attachment: fixed;
+        }
+
+        section#irmão {
+            background-image: url(../d12/imagens/background\ irmao\ 1000.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         section.imagem > p {
             display: inline-block;
             padding: 5px;
-            background-color: rgba(0, 0, 0, 0.167);
+            background-color: rgba(0, 0, 0, 0.388);
+            text-shadow: 1px 1px 0px black;
         }
     </style>
 </head>
@@ -75,18 +88,12 @@
         </p>
     </section>
 
-    <section class="imagem">
+    <section class="imagem" id="irmão">
         <p>
             Te vi crescer, passo a passo, com amor e cuidado,<br>
             E com cada ano que passava, mais crescido e animado.<br>
             Hoje és um jovem, cheio de sonhos a alcançar,<br>
             E aqui estou eu, sempre a te apoiar.<br>
-        </p>
-        <p>
-            Nossas brigas e risadas, são memórias que guardo com gosto,<br>
-            Pois são elas que fizeram de nós irmãos tão próximos.<br>
-            Mesmo nos momentos difíceis, noite ou dia,<br>
-            Lembra que estou aqui, tua companhia.
         </p>
     </section>
 
@@ -96,6 +103,15 @@
             Que conquistes teus sonhos com muita coragem e ardor.<br>
             Meu irmão caçula, és um presente de valor inigualável,<br>
             E para sempre, em meu coração, serás insubstituível.
+        </p>
+    </section>
+
+    <section class="normal">
+        <p>
+            Nossas brigas e risadas, são memórias que guardo com gosto,<br>
+            Pois são elas que fizeram de nós irmãos tão próximos.<br>
+            Mesmo nos momentos difíceis, noite ou dia,<br>
+            Lembra que estou aqui, tua companhia.
         </p>
     </section>
     <footer>
