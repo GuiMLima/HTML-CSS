@@ -12,17 +12,34 @@
         table {
             width: 450px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            background-color: #393939;
+            color: white;
+            padding: 5px;
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: #393939;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #393939;
         }
 
         td, th {
             border: 1px solid black;
             padding: 5px;
 
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: rgb(188, 188, 188);
         }
 
         .numero {
@@ -36,7 +53,7 @@
 </head>
 <body>
     <table>
-        <caption>Top 10 cidades mais populosas de SP</caption>
+        <caption>Top 10 cidades mais populosas do estado de São Paulo</caption>
         <thead>
            <th scope="col">Posição</th>
            <th scope="col">Município</th>
@@ -96,7 +113,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th scope="row">Total de habitantes</th>
+                <th scope="row" colspan="2">Total de habitantes</th>
                 <td>18.027.672</td>
             </tr>
         </tfoot>
