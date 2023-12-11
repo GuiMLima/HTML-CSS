@@ -12,7 +12,8 @@
 
         iframe#tela{
             width: 95vw;
-            height: 400px;
+            height: 250px;
+            background-color: black;
             border: 2px solid black;
         }
     </style>
@@ -22,7 +23,7 @@
     <p>Um iframe é usado para representar um site dentro de outro site, por exemplo.</p>
     <p>Veja o meu canal do youtube:
 
-         <iframe src="https://www.youtube.com/channel/UCy9pD3oAnw1BoohVo7K2x3Q" frameborder="0">
+         <iframe src="https://www.youtube.com/channel/UCy9pD3oAnw1BoohVo7K2x3Q" referrerpolicy="no-refererr">
             <a href="https://www.youtube.com/channel/UCy9pD3oAnw1BoohVo7K2x3Q" target="_blank">bolinha de lima</a>
          </iframe>
 
@@ -41,6 +42,6 @@
 
     <h2>Iframe em funcionamento</h2>
 
-    <iframe id="tela" name="frame" src="">Infelizmente seu navegador não é compoatível</iframe>
+    <iframe id="tela" name="frame" srcdoc="<h1 style='color: red; font-size: 100px'>Escolha uma opção acima</h1>">Infelizmente seu navegador não é compoatível</iframe>
 </body>
 </html>
