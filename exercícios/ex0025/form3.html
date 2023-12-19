@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="erro.php" method="post" autocomplete="off">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" placeholder="Nome completo" required maxlength="30" required>
+        </p>
+        <p>
+            <label for="imdeia">media</label>
+            <input type="number" name="media" id="imdeia" min="0" max="10" placeholder="0 a 10" step="0.25" required>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
