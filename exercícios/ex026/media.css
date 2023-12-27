@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-family: 'Times New Roman', Times, serif
+}
+
+header h1 {
+    text-align: center;
+    color: antiquewhite;
+    background-color: gray;
+}
+
+menu {
+    background-color: gray;
+    text-align: center;
+}
+
+menu li {
+    display: inline-block;
+    background-color: rgb(99, 99, 99);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+article {
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+
