@@ -18,6 +18,7 @@ header h1 {
     text-shadow: 2px 2px 0px rgba(84, 84, 84, 0.323);
     color: antiquewhite;
     background-color: gray;
+    width: 100vw;
 }
 
 menu {
